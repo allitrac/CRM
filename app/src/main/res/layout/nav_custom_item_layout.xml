@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/drawer_background">
+
+    <include layout="@layout/nav_header_main"
+        android:id="@+id/header"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/llActivities"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:layout_marginTop="8dp"
+        android:paddingBottom="8dp"
+        android:paddingLeft="16dp"
+        android:paddingTop="8dp"
+        android:onClick="itemClick">
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/crm_mobile_activities"/>
+
+        <TextView
+            android:id="@+id/tvActivities"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Activities"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llMyTasks"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:paddingBottom="8dp"
+        android:paddingLeft="16dp"
+        android:paddingTop="8dp"
+        android:onClick="itemClick">
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/crm_mobile_mytasks"/>
+
+        <TextView
+            android:id="@+id/tvMyTasks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My Tasks"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llBacklogs"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:paddingBottom="8dp"
+        android:paddingLeft="16dp"
+        android:paddingTop="8dp"
+        android:onClick="itemClick">
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/crm_mobile_backlogs"/>
+
+        <TextView
+            android:id="@+id/tvBacklogs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Backlogs"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llPending"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:paddingBottom="8dp"
+        android:paddingLeft="16dp"
+        android:paddingTop="8dp"
+        android:onClick="itemClick">
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/crm_mobile_pending"/>
+
+        <TextView
+            android:id="@+id/tvPending"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pending"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llInProgress"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:paddingBottom="8dp"
+        android:paddingLeft="16dp"
+        android:paddingTop="8dp"
+        android:onClick="itemClick">
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/crm_mobile_inprogess"/>
+
+        <TextView
+            android:id="@+id/tvInProgress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="In Progress"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llCompleted"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:paddingBottom="8dp"
+        android:paddingLeft="16dp"
+        android:paddingTop="8dp"
+        android:onClick="itemClick">
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/crm_mobile_completed"/>
+
+        <TextView
+            android:id="@+id/tvCompleted"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Completed"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"/>
+    </LinearLayout>
+
+    <View
+        android:background="#f5f5f5"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginBottom="8dp"/>
+
+    <LinearLayout
+        android:id="@+id/llExpenses"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:paddingBottom="8dp"
+        android:paddingLeft="16dp"
+        android:paddingTop="8dp"
+        android:onClick="itemClick">
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/crm_mobile_expenses"/>
+
+        <TextView
+            android:id="@+id/tvExpenses"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Expenses"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llCalendar"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:paddingBottom="8dp"
+        android:paddingLeft="16dp"
+        android:paddingTop="8dp"
+        android:onClick="itemClick">
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/crm_mobile_calendar"/>
+
+        <TextView
+            android:id="@+id/tvCalendar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calendar"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"/>
+    </LinearLayout>
+
+        <View
+            android:background="#f5f5f5"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginBottom="8dp"/>
+
+    </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

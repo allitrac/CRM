@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:showIn="navigation_view">
+
+    <group
+        android:id="@+id/group_1"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_activities"
+            android:icon="@drawable/crm_mobile_activities"
+            android:title="Activities" />
+        <item
+            android:id="@+id/nav_tasks"
+            android:icon="@drawable/crm_mobile_mytasks"
+            android:title="My Tasks" />
+        <item
+            android:id="@+id/nav_backlogs"
+            android:icon="@drawable/crm_mobile_backlogs"
+            android:title="Backlogs" />
+        <item
+            android:id="@+id/nav_pending"
+            android:icon="@drawable/crm_mobile_pending"
+            android:title="Pending" />
+        <item
+            android:id="@+id/nav_inprogress"
+            android:icon="@drawable/crm_mobile_inprogess"
+            android:title="In Progress" />
+        <item
+            android:id="@+id/nav_completed"
+            android:icon="@drawable/crm_mobile_completed"
+            android:title="Completed" />
+    </group>
+
+
+    <group
+        android:id="@+id/group_2"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_expenses"
+            android:icon="@drawable/crm_mobile_expenses"
+            android:title="Expenses" />
+        <item
+            android:id="@+id/nav_calendar"
+            android:icon="@drawable/crm_mobile_calendar"
+            android:title="Calendar" />
+
+    </group>
+
+
+</menu>

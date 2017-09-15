@@ -1,0 +1,94 @@
+ <TableLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/tblHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:shrinkColumns="*"
+        android:stretchColumns="*"
+        android:background="#fff"
+        tools:context="com.crm.sharepointevo.crm.Fragments.ExpensesFragment">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="#FFF">
+
+                <TextView
+                    android:id="@+id/tvFirstCell"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/CellTextStyle"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#D0D0D0"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_weight="0.05"
+                android:layout_width="0dp"
+                android:background="#CFCFCF"
+                android:layout_height="match_parent"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="#FFF">
+
+                <TextView
+                    android:id="@+id/tvSecondCell"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/CellTextStyle"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#D0D0D0"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_weight="0.05"
+                android:layout_width="0dp"
+                android:background="#CFCFCF"
+                android:layout_height="match_parent"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="#FFF">
+
+                <TextView
+                    android:id="@+id/tvThirdCell"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/CellTextStyle"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#D0D0D0"/>
+
+            </LinearLayout>
+
+        </TableRow>
+    </TableLayout>
+
